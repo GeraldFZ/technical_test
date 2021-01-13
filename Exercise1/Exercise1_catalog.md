@@ -1,5 +1,5 @@
 
-Include 6 files:
+Include six files:
 
 For question 1:
     Page0.html
