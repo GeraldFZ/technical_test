@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "ab3256cc-c213-46e6-8059-6766043550ff",
+		"name": "Exercise 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Exercise3_Whitelist",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "API-Key NfySbFQKEeuj6ULej2vSMw.pnTlV73y1o4RTN58JM6AReN535UCKHjEr8xLRkIpfEZElCAOY2luLWwbmfUsaA4p​",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"name\":\"whitelist_Fan\",\n    \"type\":\"whitelist\",\n    \"countries\":[\"France\"],\n    \"isps\":[\"Orange France Mobile\", \"Wind Tre\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/{2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f}/geo-isp-restrictions/lists\n",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"{2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f}",
+						"geo-isp-restrictions",
+						"lists\n"
+					]
+				},
+				"description": "WhiteList for France in Exercise 3."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "API-Key NfySbFQKEeuj6ULej2vSMw.pnTlV73y1o4RTN58JM6AReN535UCKHjEr8xLRkIpfEZElCAOY2luLWwbmfUsaA4p​",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	}
+}
